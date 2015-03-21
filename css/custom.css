@@ -1,1 +1,31 @@
 /* You can include your custom styling here */
+
+/*Nav Bar Styling*/
+
+body > nav > div > div.navbar-header > button {
+	float: left;
+	margin-right: 0;
+}
+
+.caption {
+	color: red;
+}
+
+.caption em {
+	color: black;
+}
+
+#grey-filler {
+	background-color: #EBE6E2;
+	height: 2em;
+	border-bottom: 2px solid lightGrey;
+}
+
+#nav-container {
+	border-bottom: 3px solid lightGrey;
+}
+
+article {
+	padding-top: 2em;
+	padding-bottom: 2em; 
+}
