@@ -23,39 +23,55 @@
   <body>
 
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      
       <div class="container-fluid" id="nav-container">
+        
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="file:///Users/dominicdunnett/workspace/html-intro/Week1/Bootstrap/bootstrap-lab/index.html#">
-            <img src="./index_files/tnw-logo.svg" alt="" width="auto" height="100%">
-          </a>
-          <ul class="nav navbar-nav navbar-right nav-pills visible-xs">
-            <li role="presentation" class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-              Follow<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">G+</a></li>
-                <li><a href="#">Facebook</a></li>
-              </ul>
-            </li>
-            <li>
-              <div class="btn-group btn-group-sm" role="group" aria-label="Mobile Icons">
-                <button type="button" class="btn btn-default" aria-label="Search">
+          
+          <div class="col-xs-2">  
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div class="col-xs-1">
+            <a class="navbar-brand" href="file:///Users/dominicdunnett/workspace/html-intro/Week1/Bootstrap/bootstrap-lab/index.html#" role="button">
+              <img src="./index_files/tnw-logo.svg" alt="TNW Icon" width="auto" height="100%">
+            </a>
+          </div>
+          
+          <div class="col-xs-3 col-xs-offset-3">
+            <ul class="nav navbar-nav navbar-right nav-pills visible-xs">
+              <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                Follow<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">G+</a></li>
+                  <li><a href="#">Facebook</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-3">
+            <ul class="nav navbar-nav navbar-right nav-pills visible-xs">
+              <li>
+                <button type="button" class="btn btn-default btn-sm" aria-label="Search">
                   <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                 </button>
-                <button type="button" class="btn btn-default" aria-label="Search">
+                <button type="button" class="btn btn-default btn-sm" aria-label="Log In">
                   <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                 </button>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
+
         </div>
+
         <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="file:///Users/dominicdunnett/workspace/html-intro/Week1/Bootstrap/bootstrap-lab/index.html#">Dashboard</a></li>
@@ -67,7 +83,9 @@
             <input type="text" class="form-control" placeholder="Search...">
           </form>
         </div>
+
       </div>
+
     </nav>
 
     <div class="container-fluid">
@@ -93,10 +111,14 @@
           </ul>
         </div>
 
-        <div id="grey-filler"></div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <div class="container-fluid col-xs-12">
-            <article>
+        <div id="grey-filler" class="visible-xs"></div>
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="content-wrapper">
+          <div id="ad-banner" class="hidden-xs">
+            Support TNW - <a href="#">become pro</a> and we can ditch the banners
+          </div>
+          <div class="container-fluid col-xs-12 col-sm-10 col-sm-offset-1" id="article-wrapper">
+            <article class="col-sm-8">
               <img src="images/main/Square-Reader-520x245.jpg" alt="Square Reader" class="col-xs-12">
               <figcaption class="caption"><em>By</em> [AUTHOR] - <time><em>[DATE]</em></time></figcaption>
               <h2>Lorem ipsum dolor sit amet</h2>
@@ -107,28 +129,30 @@
               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </article>
-            <article>
-              <img src="images/main/well-dressed-man-in-coat-520x245.jpg" alt="Square Reader" class="col-xs-12">
-              <figcaption class="caption"><em>By</em> [AUTHOR] - <time><em>[DATE]</em></time></figcaption>
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </article>
-            <article>
-              <img src="images/main/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-520x245.png" alt="Square Reader" class="col-xs-12">
-              <figcaption class="caption"><em>By</em> [AUTHOR] - <time><em>[DATE]</em></time></figcaption>
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </article>
+            <div id="side-story" class="col-sm-4">
+              <article>
+                <img src="images/main/well-dressed-man-in-coat-520x245.jpg" alt="Square Reader" class="col-xs-12">
+                <figcaption class="caption"><em>By</em> [AUTHOR] - <time><em>[DATE]</em></time></figcaption>
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p class="visible-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </article>
+              <article>
+                <img src="images/main/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-520x245.png" alt="Square Reader" class="col-xs-12">
+                <figcaption class="caption"><em>By</em> [AUTHOR] - <time><em>[DATE]</em></time></figcaption>
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p class="visible-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </article>
+            </div>
           </div>
         </div>
       </div>

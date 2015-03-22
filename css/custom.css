@@ -1,12 +1,23 @@
 /* You can include your custom styling here */
 
 /*Nav Bar Styling*/
-
-body > nav > div > div.navbar-header > button {
-	float: left;
-	margin-right: 0;
+#nav-container {
+	border-bottom: 3px solid lightGrey;
 }
 
+#nav-container > div > div.col-xs-1 {
+	padding: 0px;
+}
+
+#nav-container > div > div:nth-child(1) {
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	float: left;
+}
+
+/*Blog article styling*/
 .caption {
 	color: red;
 }
@@ -21,11 +32,44 @@ body > nav > div > div.navbar-header > button {
 	border-bottom: 2px solid lightGrey;
 }
 
-#nav-container {
-	border-bottom: 3px solid lightGrey;
-}
-
 article {
 	padding-top: 2em;
-	padding-bottom: 2em; 
+	padding-bottom: 2em;
+	font-size: 1em;
+}
+
+#article-wrapper {
+	background-color: white;
+}
+
+#content-wrapper {
+	background-color: lightGrey;
+}
+
+@media (max-width: 768px) {
+	#content-wrapper {
+		background-color: white;
+	}
+}
+
+@media (min-width: 768px) {
+  #side-story h2 {
+   font-size: 1.4em;
+  }
+}
+
+/*Advert Banner styling*/
+
+#ad-banner a {
+	text-decoration: none;
+	color: red;
+}
+
+#ad-banner {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+body {
+	font-family: georgia;
 }
