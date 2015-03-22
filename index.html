@@ -73,24 +73,24 @@
         </div>
 
         <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="file:///Users/dominicdunnett/workspace/html-intro/Week1/Bootstrap/bootstrap-lab/index.html#">Dashboard</a></li>
             <li><a href="file:///Users/dominicdunnett/workspace/html-intro/Week1/Bootstrap/bootstrap-lab/index.html#">Settings</a></li>
             <li><a href="file:///Users/dominicdunnett/workspace/html-intro/Week1/Bootstrap/bootstrap-lab/index.html#">Profile</a></li>
             <li><a href="file:///Users/dominicdunnett/workspace/html-intro/Week1/Bootstrap/bootstrap-lab/index.html#">Help</a></li>
           </ul>
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>
         </div>
 
       </div>
 
     </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="main-content-background">
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
+        <div class="col-lg-2 sidebar visible-lg">
           <ul class="nav nav-sidebar">
             <li class="active"><a href="file:///Users/dominicdunnett/workspace/html-intro/Week1/Bootstrap/bootstrap-lab/index.html#">Overview <span class="sr-only">(current)</span></a></li>
             <li><a href="file:///Users/dominicdunnett/workspace/html-intro/Week1/Bootstrap/bootstrap-lab/index.html#">Reports</a></li>
@@ -113,7 +113,7 @@
 
         <div id="grey-filler" class="visible-xs"></div>
 
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="content-wrapper">
+        <div class="col-lg-10 col-lg-offset-2 main" id="content-wrapper">
           <div id="ad-banner" class="hidden-xs">
             Support TNW - <a href="#">become pro</a> and we can ditch the banners
           </div>
@@ -153,10 +153,18 @@
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </article>
             </div>
+                <div class="footer container-fluid col-sm-12">
+                  <a id="footer-brand-icon" class="navbar-brand" href="file:///Users/dominicdunnett/workspace/html-intro/Week1/Bootstrap/bootstrap-lab/index.html#" role="button">
+                      <img src="./index_files/tnw-logo.svg" alt="TNW Icon" width="auto" height="100%">
+                  </a>
+                </div>
           </div>
         </div>
       </div>
+
+    
     </div>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
