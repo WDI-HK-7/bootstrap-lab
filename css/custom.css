@@ -211,15 +211,30 @@ button.active {
   outline: none;
   outline-offset: none;
 }
+.feed-tabs .thumbnail {
+  border: none;
+}
+.feed-tabs img {
+  border-radius: 3px;
+}
+.feed-tabs .col-lg-8 {
+  padding-left: 0;
+}
+.feed-tabs .col-lg-4 {
+  padding-right: 5px;
+  height: 60px;
+}
 .caption p {
-  font-size: 16px;
+  font-size: 14px;
   color: rgb(78, 88, 87);
   font-family: 'Source Sans Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 .caption small {
-  font-size: 14px;
+  font-size: 13px;
   color: rgb(166, 171, 175);
   font-family: 'FF Tisa', Georgia, serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 
