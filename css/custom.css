@@ -23,6 +23,11 @@
 	border-bottom: 2px solid #ff3c1f;
 }
 
+.menu-icons:hover {
+	color: #ff3c1f;
+	border-bottom: 2px solid #ff3c1f;
+}
+
 .icon-top {
 	border-left: 1px solid lightGrey;
 }
@@ -40,6 +45,11 @@
 #sidebar-dropdown {
 	margin-bottom: 20px;
 	font-family: 'Source Sans Pro', sans-serif;
+	text-align: left;
+}
+
+#sidebar-dropdown-spacing {
+	padding: 75px;
 }
 
 #sidebar-buttons {
