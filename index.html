@@ -10,72 +10,274 @@
     <link rel="icon" href="images/favicon/favicon.ico">
 
     <title>The Next Web</title>
-
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link href="http://getbootstrap.com/examples/dashboard/dashboard.css" rel="stylesheet">
-
     <script src="js/ie-emulation-modes-warning.js"></script><style type="text/css"></style>
 
     <link href="css/custom.css" rel="stylesheet">
   </head>
 
   <body>
-
+    <!-- Header -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+      <div class="container-fluid custom-header">
+
+        <!-- Header Logo -->
+        <div class="navbar-header logo">
           <a class="navbar-brand" href="#">
-            <img src="images/logo/tnw-logo.svg" alt="" width="auto" height="100%">
-          </a>
+            <img src="images/logo/tnw-logo.svg" alt="" width="auto" height="100%" alt="The Next Web"></a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
+        <!-- End of Header Logo -->
+
+        <!-- .Navbar Links Wrapper -->
+        <div class="links-wrapper" id="navbar">
+
+          <!-- Left Nav Links @Hidden When SM or Smaller-->
+          <ul class="nav navbar-nav navbar-left hidden-xs hidden-sm">
+            <li class="title-font text-uppercase"><a href="#">Blog</a></li>
+            <li class="title-font text-uppercase"><a href="#">Conference</a></li>
+            <li class="title-font text-uppercase"><a href="#">104 Deals</a></li> 
+            <li class="title-font text-uppercase"><a href="#">Tech5</a></li> 
+            <li class="title-font text-uppercase"><a href="#">Pro</a></li> 
+          </ul> <!-- End of Left Nav Links -->
+
+          <!-- Right Nav Links-->
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>
-        </div>
-      </div>
+            <!-- 3 Social Like Buttons @Visible Only When LG -->
+            <li class="social-buttons">
+              <button type="button" class="btn btn-primary btn-small-font navbar-btn hidden-xs hidden-sm">Facebook</button></a> 
+            </li>
+
+            <li class="social-buttons">
+              <button type="button" class="btn btn-info btn-small-font navbar-btn hidden-xs hidden-sm">Twitter</button></a> 
+            </li>
+
+            <li class="social-buttons">
+              <button type="button" class="btn btn-warning btn-small-font navbar-btn hidden-xs hidden-sm">RSS</button></a> 
+            </li>
+
+            <!-- Nav Buttons @Visible All The Time -->
+            <!-- !! Can't Seem To Make Them Not Collapse From XS Onwards ??? -->
+            
+            <!-- Social Dropdown Menu -->
+            <!-- !! Cant get Dropdown Menu To Align Correctly ??? -->
+            <li class="dropdown"><a href="#" class="dropdown-toggle collapsed" data-toggle="dropdown" role="button"><span class="visible-xs">Follow</span> <span class="caret"></span></a>
+              <ul class="dropdown-menu social-menu" role="menu">
+                <li class="col-xs-4" id="social"><a href="#">Facebook</a></li>
+                <li class="col-xs-4" id="social"><a href="#">Twitter</a></li>
+                <li class="col-xs-4" id="social"><a href="#">Google</a></li>
+
+                <li class="col-xs-4" id="social"><a href="#">Youtube</a></li>
+                <li class="col-xs-4" id="social"><a href="#">LinkedIn</a></li>
+                <li class="col-xs-4" id="social"><a href="#">Pinterest</a></li>
+
+                <li class="col-xs-4" id="social"><a href="#">RSS Feed</a></li>
+                <li class="col-xs-4" id="social"><a href="#">Pro RSS Feed</a></li>
+                <li class="col-xs-4" id="social"><a href="#">Push Alerts</a></li>
+                <li class="col-xs-12" id="news">The latest news in your inbox</li>
+                
+                <li class="col-xs-12" id="subscribe">
+                  <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                          <button class="btn btn-danger" id="btn-go" type="button">Go!</button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </li>
+
+            <!-- Glyphicons -->
+            <li class="dropdown"><a href="#" class="dropdown-toggle collapsed" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-user"></span></a>
+              <ul class="dropdown-menu login-menu" role="menu">
+                <form>
+                  <li id="login">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                    </div>
+                  </li>
+
+                  <li id="login">
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                    </div>
+                  </li>
+                
+                  <li>
+                    <button type="submit" class="btn btn-login">LOG IN</button>
+                  </li>
+                  <div class="no-account">
+                  <li>
+                    <center>No account yet?</center>
+                  </li>
+                  <li>
+                    <button type="submit" class="btn btn-danger">CREATE ONE NOW</button>
+                  </li>
+                </form>
+              </ul>
+              </li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle collapsed" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"> </span></a>
+              <ul class="dropdown-menu hidden-lg hidden-md" id="search" role="menu">
+                <div class="form-group">
+                  <input type="email" class="form-control" id="search-bar" placeholder="Search">
+                </div>
+              </ul>
+            </li>
+            <li class="search-area">
+              <div class="search visible-lg visible-md">
+                <input type="email" class="form-control" placeholder="Search" id="actual-search-bar">
+              </div>
+            </li>
+          </ul> <!-- End of Right Nav Links -->
+
+        </div> <!-- End of Nav Links Wrapper -->
+      </div> <!-- End of My-Header -->
     </nav>
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-          </ul>
+
+        <!-- Left Side Bar @Visible in LG Only -->
+        <!-- <div class="visible-lg-block col-lg-3 sidebar"> -->
+        <div class="sidebar visible-lg-block">
+
+           <!-- All Channels Drop Down Menu-->
+          <div class="btn-group btn-group-justified">
+            <div class="btn-group">
+              <button type="button" class="btn btn-danger btn-small-font dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <span class="left-channel">All Channels</span>
+                <span class="right-caret"> <span class="caret"></span></span>
+              </button>
+              
+              <ul class="dropdown-menu all-channels" role="menu">
+                <li class="dropdown-header">Technology</li>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Web Apps</li>
+                <li><a href="#">Something else here</a></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+          </div>
+          <br>
+
+          <!-- Latest vs Popular Buttons-->
+          <div class="btn-group btn-group-justified" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default btn-small-font "><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Latest</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default btn-small-font "><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Popular</button>
+            </div>
+          </div>
+          <br>
+
+          <!-- List of Latest Articles -->
+          <div class="latest-articles" style="overflow-x: hidden; overflow-y: scroll; width: 110%; height:80%;">
+          
+            <ul class="nav nav-sidebar">
+              <li>
+                <img src="images/sidebar/kits-and-themese-feat-60x50.jpg">
+                <a href="#"> 91% off a Lifetime Of Premium UI Kits & Design Resources</a>
+              </li>
+              <li>
+                <img src="images/sidebar/Square-Reader-60x50.jpg">
+                <a href="#"> Square Takes Its Register Software Platform Worldwide</a>
+                <span class="article-info">10 minutes ago</span>
+              </li>
+              <li>
+                <img src="images/sidebar/well-dressed-man-in-coat-60x50.jpg">
+                <a href="#"> The Weird Science of First Impressions</a>
+                <span class="article-info">10 minutes ago</span>
+              </li>
+              <li>
+                <img src="images/sidebar/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-60x50.png">
+                <a href="#"> Print Photos on Your Adidas Sneakers. Why not?</a>
+                <span class="article-info">10 minutes ago</span>
+              </li>
+              <li>
+                <img src="images/sidebar/kits-and-themese-feat-60x50.jpg">
+                <a href="#"> 91% off a Lifetime Of Premium UI Kits & Design Resources</a>
+                <span class="article-info">10 minutes ago</span>
+              </li>
+              <li>
+                <img src="images/sidebar/Square-Reader-60x50.jpg">
+                <a href="#"> Square Takes Its Register Software Platform Worldwide</a>
+                <span class="article-info">10 minutes ago</span>
+              </li>
+              <li>
+                <img src="images/sidebar/well-dressed-man-in-coat-60x50.jpg">
+                <a href="#"> The Weird Science of First Impressions</a>
+                <span class="article-info">10 minutes ago</span>
+              </li>
+              <li>
+                <img src="images/sidebar/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-60x50.png">
+                <a href="#"> Print Photos on Your Adidas Sneakers. Why not?</a>
+                <span class="article-info">10 minutes ago</span>
+              </li>
+
+            </ul>
+          </div>
+
+          <!-- Links At The Bottom of Side Bar -->
+          <div class="sidebar-bottom-links">
+          <center>
+            <a href="#">About</a>
+            <a href="#">Goodies</a>
+            <a href="#">Advertise</a>
+            <a href="#">Privacy</a>
+            <a href="#">POS</a>
+          </center>
+          </div>
+
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1>News Content</h1>
+        <!-- End of Left Side Bar -->
+
+        <!-- TNW Tagline @Visible From SM Onwards -->
+        <h4 class="tnw-tag hidden-xs col-sm-10 col-sm-offset-1 col-lg-7 col-lg-offset-4"><center>Support TNW - <a href="#" title="">become Pro</a> and we can ditch the banners</center></h4>
+
+        <!-- Main Content Wrapper @Spans One Column in XS With 1 Column Margin From SM Onwards -->
+        <div class="main col-xs-12 col-sm-10 col-sm-offset-1 col-lg-7 col-lg-offset-4">
+          
+          <!-- Left Column of Main Content @Splits 8 to 4 From SM Onwards-->
+          <div class="col-xs-12 col-sm-8">  
+            <img class="img-responsive center-block" src="images/main/Square-Reader-520x245.jpg" />
+            <br>
+            <span class="article-info">By <a href="#"><span id="author">Ben Woods</span></a> - 20 Nov'14</span>
+            <h1 class="title-font">Square officially launches its Register software platform worldwide</h1>
+            <p>Square has today annouced that its point-of-sale (POS) software Square Register is now available globally, having previously been restricted to users in the US, Canada and Japan. Announced at The Financial... <a href="#" title="">Keep reading →</a> </p>
+            <br>
+          </div>
+
+          <!-- Right Column of Main Content @Splits 8 to 4 From SM Onwards -->
+          <div class="col-xs-12 col-sm-4">
+            <img class="img-responsive center-block" src="images/main/well-dressed-man-in-coat-520x245.jpg" />
+            <br>
+            <span class="article-info">By <a href="#"><span id="author">Jory Mackay</span></a> - 20 Nov'14</span>
+            <h2 class="title-font">The weird science of first impressions</h2>
+            <p class="visible-xs-block">Square has today annouced that its point-of-sale (POS) software Square Register is now available globally, having previously been restricted to users in the US, Canada and Japan. Announced at The Financial... <a href="#" title="">Keep reading →</a> </p>
+            <br>
+
+            <img class="img-responsive center-block" src="images/main/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-520x245.png" />
+            <br>
+            <span class="article-info">By <a href="#"><span id="author">Paul Sawers</span></a> - 20 Nov'14</span>
+            <h2 class="title-font">Adidas now lets Americans print photos on their sneakers too</h2>
+            <p class="visible-xs-block">Square has today annouced that its point-of-sale (POS) software Square Register is now available globally, having previously been restricted to users in the US, Canada and Japan. Announced at The Financial... <a href="#" title="">Keep reading →</a> </p>
+            <br>
+          </div>
         </div>
       </div>
     </div>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
