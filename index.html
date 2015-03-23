@@ -30,21 +30,23 @@
         </div>
         <!-- End of Header Logo -->
 
-        <!-- .Navbar Links Wrapper -->
+        <!-- Navbar Links Wrapper -->
         <div class="links-wrapper" id="navbar">
 
-          <!-- Left Nav Links @Hidden When SM or Smaller-->
+          <!-- Left Nav Links @Hidden When SM or XS-->
           <ul class="nav navbar-nav navbar-left hidden-xs hidden-sm">
             <li class="title-font text-uppercase"><a href="#">Blog</a></li>
             <li class="title-font text-uppercase"><a href="#">Conference</a></li>
             <li class="title-font text-uppercase"><a href="#">104 Deals</a></li> 
             <li class="title-font text-uppercase"><a href="#">Tech5</a></li> 
             <li class="title-font text-uppercase"><a href="#">Pro</a></li> 
-          </ul> <!-- End of Left Nav Links -->
+          </ul>
+          <!-- End of Left Nav Links -->
 
           <!-- Right Nav Links-->
           <ul class="nav navbar-nav navbar-right">
-            <!-- 3 Social Like Buttons @Visible Only When LG -->
+
+            <!-- 3 Social Buttons @Visible Only When LG -->
             <li class="social-buttons">
               <button type="button" class="btn btn-primary btn-small-font navbar-btn hidden-xs hidden-sm">Facebook</button></a> 
             </li>
@@ -56,135 +58,156 @@
             <li class="social-buttons">
               <button type="button" class="btn btn-warning btn-small-font navbar-btn hidden-xs hidden-sm">RSS</button></a> 
             </li>
-
-            <!-- Nav Buttons @Visible All The Time -->
-            <!-- !! Can't Seem To Make Them Not Collapse From XS Onwards ??? -->
             
-            <!-- Social Dropdown Menu -->
-            <!-- !! Cant get Dropdown Menu To Align Correctly ??? -->
+            <!-- Right Icons @Visible All The Time // But Keeps Collapsing? -->
+
+            <!-- Follow Dropdown Menu // Won't Align? -->
             <li class="dropdown"><a href="#" class="dropdown-toggle collapsed" data-toggle="dropdown" role="button"><span class="visible-xs">Follow</span> <span class="caret"></span></a>
               <ul class="dropdown-menu social-menu" role="menu">
-                <li class="col-xs-4" id="social"><a href="#">Facebook</a></li>
-                <li class="col-xs-4" id="social"><a href="#">Twitter</a></li>
-                <li class="col-xs-4" id="social"><a href="#">Google</a></li>
+                <li class="col-xs-4 social-links"><a href="#">Facebook</a></li>
+                <li class="col-xs-4 social-links"><a href="#">Twitter</a></li>
+                <li class="col-xs-4 social-links"><a href="#">Google</a></li>
 
-                <li class="col-xs-4" id="social"><a href="#">Youtube</a></li>
-                <li class="col-xs-4" id="social"><a href="#">LinkedIn</a></li>
-                <li class="col-xs-4" id="social"><a href="#">Pinterest</a></li>
+                <li class="col-xs-4 social-links"><a href="#">Youtube</a></li>
+                <li class="col-xs-4 social-links"><a href="#">LinkedIn</a></li>
+                <li class="col-xs-4 social-links"><a href="#">Pinterest</a></li>
 
-                <li class="col-xs-4" id="social"><a href="#">RSS Feed</a></li>
-                <li class="col-xs-4" id="social"><a href="#">Pro RSS Feed</a></li>
-                <li class="col-xs-4" id="social"><a href="#">Push Alerts</a></li>
-                <li class="col-xs-12" id="news">The latest news in your inbox</li>
+                <li class="col-xs-4 social-links"><a href="#">RSS Feed</a></li>
+                <li class="col-xs-4 social-links"><a href="#">Pro RSS Feed</a></li>
+                <li class="col-xs-4 social-links"><a href="#">Push Alerts</a></li>
                 
-                <li class="col-xs-12" id="subscribe">
+                <li class="col-xs-12 news">The Latest News In Your Inbox</li>
+                <li class="col-xs-12 subscribe">
                   <div class="row">
-                    <div class="col-xs-10 col-xs-offset-1">
+                    <div class="col-xs-12">
                       <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for...">
+                        <input type="text" class="form-control" placeholder="your email address">
                         <span class="input-group-btn">
-                          <button class="btn btn-danger" id="btn-go" type="button">Go!</button>
+                          <button class="btn btn-danger" id="btn-go" type="button">OK</button>
                         </span>
                       </div>
                     </div>
                   </div>
                 </li>
 
+                <li>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> TNW Weekly
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Daily Top Stories
+                    </label>
+                  </div>
+                </li>
               </ul>
             </li>
 
-            <!-- Glyphicons -->
+
+            <!-- Login Glyphicon -->
             <li class="dropdown"><a href="#" class="dropdown-toggle collapsed" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-user"></span></a>
               <ul class="dropdown-menu login-menu" role="menu">
                 <form>
-                  <li id="login">
-                    <div class="form-group">
+                  <li>
+                    <div class="form-group login-dropdown">
                       <label for="exampleInputEmail1">Email address</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
                     </div>
                   </li>
 
-                  <li id="login">
-                    <div class="form-group">
+                  <li>
+                    <div class="form-group login-dropdown">
                       <label for="exampleInputPassword1">Password</label>
                       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
                     </div>
                   </li>
                 
                   <li>
-                    <button type="submit" class="btn btn-login">LOG IN</button>
+                    <button type="submit" class="btn btn-login text-uppercase">Log In</button>
                   </li>
+
                   <div class="no-account">
-                  <li>
-                    <center>No account yet?</center>
-                  </li>
-                  <li>
-                    <button type="submit" class="btn btn-danger">CREATE ONE NOW</button>
-                  </li>
+                    <li>
+                      <center>No account yet?</center>
+                    </li>
+                    <li>
+                      <button type="submit" class="btn btn-danger btn-create text-uppercase">Create One Now</button>
+                    </li>
+                  </div>
                 </form>
               </ul>
-              </li>
+            </li>
+
+            <!-- Search Glyphicon -->
             <li class="dropdown"><a href="#" class="dropdown-toggle collapsed" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-search"> </span></a>
-              <ul class="dropdown-menu hidden-lg hidden-md" id="search" role="menu">
+              <ul class="dropdown-menu hidden-lg hidden-md" id="search-menu" role="menu">
                 <div class="form-group">
-                  <input type="email" class="form-control" id="search-bar" placeholder="Search">
+                  <input type="email" class="form-control" placeholder="Search">
                 </div>
               </ul>
+
             </li>
-            <li class="search-area">
+
+            <!-- Expanded Search Bar -->
+            <li class="searchbar-wrapper">
               <div class="search visible-lg visible-md">
-                <input type="email" class="form-control" placeholder="Search" id="actual-search-bar">
+                <input type="email" class="form-control" placeholder="Search" id="searchbar">
               </div>
             </li>
-          </ul> <!-- End of Right Nav Links -->
+          </ul>
+          <!-- End of Right Nav Links -->
 
-        </div> <!-- End of Nav Links Wrapper -->
+        </div> <!-- End of Navbar Links Wrapper -->
       </div> <!-- End of My-Header -->
     </nav>
 
     <div class="container-fluid">
       <div class="row">
 
-        <!-- Left Side Bar @Visible in LG Only -->
+        <!-- Side Bar @Visible in LG Only -->
         <!-- <div class="visible-lg-block col-lg-3 sidebar"> -->
         <div class="sidebar visible-lg-block">
 
            <!-- All Channels Drop Down Menu-->
-          <div class="btn-group btn-group-justified">
-            <div class="btn-group">
-              <button type="button" class="btn btn-danger btn-small-font dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                <span class="left-channel">All Channels</span>
-                <span class="right-caret"> <span class="caret"></span></span>
-              </button>
-              
-              <ul class="dropdown-menu all-channels" role="menu">
-                <li class="dropdown-header">Technology</li>
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Web Apps</li>
-                <li><a href="#">Something else here</a></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
+          <div class="sidebar-buttons-top">
+            <div class="btn-group btn-group-justified">
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger btn-channel btn-small-font dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <span class="channel-title">All Channels</span>
+                  <span class="channel-caret"> <span class="caret"></span></span>
+                </button>
+                
+                <ul class="dropdown-menu all-channels-dropdown" role="menu">
+                  <li class="dropdown-header">Technology</li>
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Web Apps</li>
+                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <br>
+            <br>
 
-          <!-- Latest vs Popular Buttons-->
-          <div class="btn-group btn-group-justified" role="group" aria-label="...">
-            <div class="btn-group" role="group">
-              <button type="button" class="btn btn-default btn-small-font "><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Latest</button>
-            </div>
-            <div class="btn-group" role="group">
-              <button type="button" class="btn btn-default btn-small-font "><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Popular</button>
+            <!-- Latest vs Popular Buttons-->
+            <div class="btn-group btn-group-justified" role="group" aria-label="...">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default btn-small-font"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Latest</button>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default btn-small-font"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Popular</button>
+              </div>
             </div>
           </div>
           <br>
 
           <!-- List of Latest Articles -->
-          <div class="latest-articles" style="overflow-x: hidden; overflow-y: scroll; width: 110%; height:80%;">
+          <div class="sidebar-articles" style="overflow-x: hidden; overflow-y: scroll; width: 100%; height:77%;">
           
-            <ul class="nav nav-sidebar">
+            <ul class="nav nav-sidebar sidebar-ul">
               <li>
                 <img src="images/sidebar/kits-and-themese-feat-60x50.jpg">
                 <a href="#"> 91% off a Lifetime Of Premium UI Kits & Design Resources</a>
@@ -228,24 +251,24 @@
             </ul>
           </div>
 
-          <!-- Links At The Bottom of Side Bar -->
+          <!-- Side Bar Bottom Links -->
           <div class="sidebar-bottom-links">
           <center>
-            <a href="#">About</a>
-            <a href="#">Goodies</a>
-            <a href="#">Advertise</a>
-            <a href="#">Privacy</a>
-            <a href="#">POS</a>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Goodies</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">ToS</a></li>
           </center>
           </div>
 
         </div>
-        <!-- End of Left Side Bar -->
+        <!-- End of Side Bar -->
 
         <!-- TNW Tagline @Visible From SM Onwards -->
         <h4 class="tnw-tag hidden-xs col-sm-10 col-sm-offset-1 col-lg-7 col-lg-offset-4"><center>Support TNW - <a href="#" title="">become Pro</a> and we can ditch the banners</center></h4>
 
-        <!-- Main Content Wrapper @Spans One Column in XS With 1 Column Margin From SM Onwards -->
+        <!-- Main Content Wrapper @Spans One Column in XS With 1 Column Left/Right Margin From SM Onwards -->
         <div class="main col-xs-12 col-sm-10 col-sm-offset-1 col-lg-7 col-lg-offset-4">
           
           <!-- Left Column of Main Content @Splits 8 to 4 From SM Onwards-->
