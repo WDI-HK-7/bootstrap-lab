@@ -70,7 +70,18 @@
             <input type="text" class="form-control" placeholder="Search...">
           </form>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="file:///Users/dominicdunnett/workspace/html-intro/Week1/Bootstrap/bootstrap-lab/index.html#"><span class="caret"></span></a></li>
+            <li>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something else here</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated link</a></li>
+              </ul>
+            </li>
             <li class="icon-top"><a href="file:///Users/dominicdunnett/workspace/html-intro/Week1/Bootstrap/bootstrap-lab/index.html#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>  
             <li class="icon-top"><a href="file:///Users/dominicdunnett/workspace/html-intro/Week1/Bootstrap/bootstrap-lab/index.html#"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></li>
             <li class="icon-top"><a href="file:///Users/dominicdunnett/workspace/html-intro/Week1/Bootstrap/bootstrap-lab/index.html#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
@@ -91,15 +102,13 @@
     <div class="container-fluid" id="main-content-background">
       <div class="row">
         <div id="sidebar" class="col-lg-3 sidebar visible-lg">
-          <div id="sidebar-header" class="container col-lg-12">
-            <button id="sidebar-dropdown" type="button" class="btn btn-danger dropdown-toggle col-lg-12 button-sidebar" data-toggle="dropdown" aria-expanded="false">ALL CHANNELS<span class="caret"></span></button>
-            <div id="sidebar-buttons" class="btn-group btn-group-justified" role="group" aria-label="...">
-                <div class="btn-group" role="group">
-                  <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-time"></span>LATEST</button>
-                </div>
-                <div class="btn-group" role="group">
-                  <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-fire"></span>RIGHT</button>
-                </div>
+          <button id="sidebar-dropdown" type="button" class="btn btn-danger dropdown-toggle col-lg-12 button-sidebar" data-toggle="dropdown" aria-expanded="false">ALL CHANNELS<span class="caret"></span></button>
+          <div id="sidebar-buttons" class="btn-group btn-group-justified" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-time"></span>LATEST</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-fire"></span>RIGHT</button>
             </div>
           </div>
           <ul class="nav nav-sidebar">
@@ -135,13 +144,11 @@
           </div>
         </div>
 
-        <div id="grey-filler" class="visible-xs"></div>
-
-        <div class="col-lg-10 col-lg-offset-3 main" id="content-wrapper">
+        <div class="col-lg-9 col-lg-offset-3 main" id="content-wrapper">
           <div id="ad-banner" class="hidden-xs">
             Support TNW - <a href="#">become pro</a> and we can ditch the banners
           </div>
-          <div class="container-fluid col-xs-12 col-sm-10 col-sm-offset-1" id="article-wrapper">
+          <div class="container-fluid col-xs-12 col-sm-12" id="article-wrapper">
             <article class="col-sm-8">
               <img src="images/main/Square-Reader-520x245.jpg" alt="Square Reader" class="col-xs-12">
               <figcaption class="caption"><em>By</em> [AUTHOR] - <time><em>[DATE]</em></time></figcaption>
@@ -207,6 +214,7 @@
     <script src="./index_files/jquery.min.js"></script>
     <script src="./index_files/bootstrap.min.js"></script>
     <script src="./index_files/docs.min.js"></script>
+    <script>window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));</script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./index_files/ie10-viewport-bug-workaround.js"></script>
 

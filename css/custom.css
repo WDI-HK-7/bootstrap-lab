@@ -92,12 +92,6 @@ article {
 	background-color: #f8f9fa;
 }
 
-@media (max-width: 768px) {
-	#content-wrapper {
-		background-color: white;
-	}
-}
-
 @media (min-width: 768px) {
   #side-story h2 {
    font-size: 1.4em;
