@@ -129,15 +129,100 @@ body {
   background-color: rgb(255, 255, 255);
   float: left;
   width: 325px;
+  height: 100%;
+  border-right-style: solid;
+  border-color: rgb(217, 224, 226);
+  border-right-width: 1px;
+  position: fixed;
+}
+.feed-top, .feed-footer, .feed-content {
+  background-color: rgb(255, 255, 255);
   border-right-style: solid;
   border-color: rgb(217, 224, 226);
   border-right-width: 1px;
 }
 .container-feed {
-  height: 800px;
   width: 325px;
-  
 }
+.feed-top{
+  height: 20%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom-style: solid;
+  border-color: rgb(217, 224, 226);
+  border-bottom-width: 1px;
+  width: 325px;
+}
+.feed-content {
+  width: 325px;
+  position: fixed;
+  height: 75%;
+  overflow-y: scroll;
+}
+.feed-div {
+  height: 10px;
+}
+.feed-tabs, .feed-div {
+  padding: 10px 0;
+  border-bottom-style: solid;
+  border-color: rgb(217, 224, 226);
+  border-bottom-width: 1px;
+}
+.feed-top > div:first-child {
+  padding-bottom: 10px;
+}
+.feed-footer {
+  height: 5%;
+  position: fixed;
+  bottom: 0;
+  border-top-style: solid;
+  border-color: rgb(217, 224, 226);
+  border-top-width: 1px;
+  width: 325px;
+  padding-top: 10px;
+  padding-bottom: 14px;
+}
+.feed-footer ul {
+  height: 25px;
+  padding-left: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+.feed-footer li {
+  display: inline-block;
+  margin: 1px 3px;
+}
+.feed-btn button {
+  width: 147px;
+}
+.form-control {
+  background-color: #ff3c1f;    
+  height: 37px;
+  color: white;
+}
+.btn-feed {
+  background-color: #fff;
+  border-color: #ccc;
+}
+button.active {
+  background-color: #f8f9fa;
+}
+.btn.active:focus, .btn:focus {
+  outline: none;
+  outline-offset: none;
+}
+.caption p {
+  font-size: 16px;
+  color: rgb(78, 88, 87);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.caption small {
+  font-size: 14px;
+  color: rgb(166, 171, 175);
+  font-family: 'FF Tisa', Georgia, serif;
+}
+
+
 
                   /*Content*/
 #main-content {
