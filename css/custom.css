@@ -37,6 +37,29 @@
 	background-color: white;
 }
 
+#sidebar-dropdown {
+	margin-bottom: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#sidebar-buttons {
+	margin-bottom: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#sidebar-header {
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+}
+
+.sidebar-article {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-top: 1px solid lightGrey;
+	border-bottom: 1px solid lightGrey;
+}
+
 /*Blog article styling*/
 .caption {
 	color: #ff3c1f;
