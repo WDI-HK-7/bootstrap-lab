@@ -123,6 +123,16 @@ body {
   font-size: 10px;
   font-weight: 800;
 }
+.follow-menu {
+  width: 300px;
+  background-color: rgb(42, 53, 64);
+  color: #fff;
+  vertical-align: middle;
+}
+.follow-menu .col-xs-4 {
+  height: 80px;
+
+}
 
                   /*Feed*/
 #feed {
@@ -243,6 +253,34 @@ button.active {
 #main-content {
   padding-top: 10px;
 }
+#main-content h1 {
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: rgb(1, 1, 1);
+  cursor: auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 48px;
+  text-decoration: none;
+}
+#main-content em {
+  color: rgb(166, 171, 175);
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-size: 13px;
+}
+#main-content strong {
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: rgb(255, 60, 31);
+  font-family: 'Fjalla One';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+}
+.keep-read {
+  color: rgb(255, 60, 31);
+  font-weight: bold;
+}
 @media (min-width: 1200px) {
   #main-content {
     margin-left: 325px;
@@ -254,13 +292,12 @@ button.active {
 }
 .container-content {
   max-width: 830px;
-  height: 800px;
 }
 .content {
   background-color: rgb(255, 255, 255);
   border: 1px solid #d9e0e2;
-  height: 800px;
   padding-top: 30px;
+  min-height: 800px;
 }
 #support-banner {
   text-align: center;
