@@ -1,1 +1,111 @@
 /* You can include your custom styling here */
+
+/*Navigation bar hover*/
+#navbar ul li a:hover {
+	text-decoration: none;
+	background: url(../images/logo/bg_nav_rollover.png) width="auto" height="100%" repeat-x;
+    color: #E8410E;
+}
+
+#header_dropdown{
+	float:left;
+}
+
+.twitter-follow-button {
+	margin-top: 15px;
+}
+
+#Wrapper_sidebar{
+  margin: 0 auto;
+  width: 100%;
+}
+
+#All_channels_dropdown button{
+	width:100%;
+}
+
+#latest_and_popular{
+  	float: right;
+  	width:100%;
+}
+
+#latest_and_popular button{
+  	width:50%;
+  	border-bottom-width: 2px;
+}
+
+#stream-switcher {
+  border-bottom: 1px solid #d9e0e2;
+  box-shadow: 0 2px 0 rgba(217,224,226,0.2);ß
+  padding: 20px 12px;
+
+}
+
+.clearfix {
+  display: block;
+}
+
+/*Dropdown all channels formatting*/
+
+/*.all_channel_dropdown_select {
+  background-color: #ff3c1f;
+  border: none;
+  border-radius: .25em;
+  color: #fff;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: .875em;
+  font-style: normal;
+  line-height: 36px;
+  padding: 1px 40px 0 .8em;
+  text-transform: uppercase;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+}*/
+
+/*Nav Bar footer*/
+.stream-footer ul li a{
+	font-family: 'Source Sans Pro',sans-serif;
+	font-size: 12px;
+	color: #ff3c1f;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	width:55px;
+	height:13px;
+}
+.stream-footer ul li {
+	display: inline;
+}
+
+.stream-footer{
+	width: 100%;
+}
+
+/*Main Wrapper*/
+.main {
+  background-color:#f8f9fb ;
+}
+
+#wrapper {
+  margin: 0 auto;
+  width: 90%;
+  background-color:#f8f9fb ;
+}
+
+/*Main Header*/
+#main_header{
+	text-align: center;
+	font-size:14px;
+}
+
+#main_article{
+	background-color: white;
+}
+
+#footer_main{
+	background-color: #E8410E;
+}
+
+#thumbnail{
+	border:none;
+}
+
