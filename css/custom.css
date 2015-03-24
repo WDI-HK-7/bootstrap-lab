@@ -1,1 +1,119 @@
-/* You can include your custom styling here */
+body {
+  font-family: 'Source Sans Pro',sans-serif;
+}
+
+#navbar a {
+	text-align: left;
+	color: #879096;
+  font-weight: 700;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: .75em;
+  text-transform: uppercase;
+  background: transparent;
+  font-size: 12px;
+  display: block;
+  opacity: .6;
+  border-bottom: 2px solid transparent;
+}
+
+.btn {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+a {
+	text-decoration:none;
+  color: #4e5860;
+}
+
+  a:hover {
+  	color: #ff3c1f;
+  	text-decoration: none;
+  }
+
+p {
+	font-size: 16px;
+  font-family: "FF Tisa",Georgia,serif;
+  color: #4e5860;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 100px;
+  font-style: normal;
+  color: #4e5860;
+  box-sizing: border-box;
+  line-height: 1.2em;
+}
+
+h2 a {
+  color: #4e5860;
+  font-size: .95em;
+  box-sizing: border-box;
+  line-height: .95em;
+}
+
+h3 { 
+  font-size: 18px;
+  color: #4e5860;
+}
+
+h4 { 
+  font-size: 16px;
+  color: #4e5860;
+}
+
+h5 {
+	font-size: .8em;
+	color: #4e5860;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.dropdown-menu ul {
+  background-color: #ff3c1f; 
+}
+
+#top-leaderboard {
+	font-size: 18px;
+
+}
+
+#top-leaderboard a {
+	font-size: 18px;
+	color: #ff3c1f;
+  text-decoration: none;
+}
+
+.author a {
+	color: #ef4423;
+  font-weight: 700;
+  font-family: "Fjalla One";
+  font-size: .75em;
+  text-transform: uppercase;
+}
+
+span {
+	color: #a6abaf;
+  font-family: "FF Tisa",Georgia,serif;
+  text-transform: none;
+  font-size: 1.1em;
+}
+
+.keep-reading a {
+	color: #ff3c1f;
+  font-size: 16px;
+  font-family: "FF Tisa",Georgia,serif;
+}
+
+.thumb {
+  border: 1px;
+  height: auto;
+}
+
+#navbar > .navnavbar-navnavbar-left > li > a:hover {
+  color: red;
+  border-bottom: 2px solid red; 
+}
