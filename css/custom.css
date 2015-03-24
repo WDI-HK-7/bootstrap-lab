@@ -1,1 +1,39 @@
-/* You can include your custom styling here */
+
+#allchannels {
+	color: white;
+	background-color: #FF4719;
+	border:300px;
+}
+
+#bodytitle {
+	position: center;
+	font-size: 12px;
+	text-align: center;
+}
+
+.panel-panel-default {
+	float: auto;
+	height: 999px;
+}
+
+.btn-group {
+	padding: 2px;
+}
+
+.col-sm-3-col-md-2-sidebar{
+	padding-right: 40px;
+}
+
+.mainbox {
+	float: center;
+}
+#benWoods {
+	font-size: 12px;
+}
+
+#facebook, #twitter {
+	padding-top: 0px;
+}
+#FB {
+	height: 30px;
+}
