@@ -1,1 +1,135 @@
-/* You can include your custom styling here */
+/*Toggle-Navigation Bar*/
+.navbar-header {
+	float: left !important; 
+}
+
+.navbar-header #navbar {
+	float: right !important;
+}
+
+#text-navbar {
+	font-family: "Fjalla One", Sans-serif;
+	color: #879096;
+	font-size: 14px;
+	line-height: 48px;
+	text-transform: uppercase;	
+	font-weight: 400;
+	border-bottom: 2px solid transparent;
+	width: auto;
+}
+
+#text-navbar a:hover {
+	color: #ff3c1f;
+}
+
+#SM {
+	padding: 12 0;
+}
+
+#navbar {
+	float: right !important;
+}
+
+.fb-like .stub {
+	border: none; 
+	visibility: visible; 
+	width: 49px; 
+	height: 48px;
+	padding-top: 15px;
+}
+
+#twitter-widget {
+	width: 60px;
+	height: 48px;
+	padding-top: 15px;
+}
+
+.rss {
+	width: 20px;
+	height: 48px;
+	padding-top: 15px;
+}
+
+#searchBar {
+	float: left;
+}
+
+/* 3.X.X By--Author--Date*/
+.top-story-wrapper {
+	margin-bottom: 30px;
+	padding: 10px; 
+}
+
+#square {
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.loop-post-byline {
+	font-family: "FF Tisa", Georgia, serif;
+	color: #879096;
+	text-transform: none;
+}
+
+.loop-post-byline .date {
+	color: #a6abaf;
+	font-style: italic;
+	font-size: 1.1em;
+	margin-right: 2px;
+}
+
+.loop-post-byline .author a {
+	font-family: "Impact";
+	color: #ff3c1f;
+	text-transform: uppercase;
+}
+
+.article-title {
+	padding: 0;
+	margin: auto 0;
+	line-height: 1em;
+	font-family: 'Source Sans Pro', Sans-serif; 
+} 
+
+.article-title a { 
+	color: #010101;
+	text-decoration: none;	
+	font-size: 25px;
+	font-weight: 400;
+	
+}
+
+.article-title a:hover { 
+	color: #ff3c1f;
+}
+
+.article-teaser p {
+	font-family: "FF Tisa", Georgia, serif; 
+	color: #4e5860;
+	font-size: 16px;
+	margin-right: 2px;
+	line-height: 25.6px;
+	font-weight: normal; 
+}
+
+.article-teaser #keep-reading {
+	color: #ff3c1f;
+}
+
+.article-teaser #keep-reading:after {
+	content:'\2192';
+}
+
+#dress {
+	width: 100%;
+}
+
+
+.sidebar {
+	background-color: grey;
+	border: 1px solid black;
+}
+
+.content {
+	background-color: grey; 
+}
