@@ -1,1 +1,265 @@
-/* You can include your custom styling here */
+body {
+  background-color: #F1F1F1;
+}
+
+.custom-header {
+  border-bottom: 2px solid #D9D9D9;
+  background-color: white; 
+}
+
+.left-links {
+  position: absolute;
+  left: 100px;
+}
+
+/*how to get the border ON TOP of header border?*/
+.navbar-left li:hover, .navbar-left a:hover {
+  border-bottom: 1px solid red;
+  color: #FF470C !important;
+}
+
+.title-font {
+  font-family: 'Source Sans Pro',sans-serif;
+}
+
+.navbar-btn {
+  margin: 8px;
+}
+
+.navbar-right > li:nth-child(n+4){
+  border-right: 1px solid #D9D9D9;
+}
+
+.navbar-right > li:nth-child(6){
+  border-right: none;
+}
+
+.btn-small-font {
+  font-size: 0.7em;
+}
+
+.social-menu {
+  padding: 0 0 0 10px;
+  margin: 0;
+  width: 470px;
+  background-color: #383838;
+  text-align: center;
+  color: white;
+}
+
+.social-links {
+  width: 150px;
+  padding: 40px 20px;
+  margin: 0;
+  border-right: 1px solid #434343;
+  border-bottom: 1px solid #434343;
+}
+
+.social-links:nth-child(3n) {
+  border-right: none;
+}
+
+.social-links a {
+  color: white !important;
+  text-align: center;
+}
+
+.social-links a:hover {
+  background-color: transparent !important;
+  color: #FF470C !important;
+}
+
+.news {
+  padding-top: 15px !important;
+  padding-bottom: 0px !important;
+  color: white;
+}
+
+.subscribe {
+  padding-top: 4px !important;
+}
+
+.checkbox {
+  padding: 4px !important;
+  text-align: left;
+}
+
+.searchbar-wrapper {
+  padding: 8px 8px 0 0;
+}
+
+.social-like-buttons {
+  padding-top: 2px;
+}
+
+#search-menu {
+  background-color: white;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+
+#searchbar {
+  width: 155px;
+}
+
+.sidebar {
+  background-color: white;
+  border-right: 1px solid #D9D9D9;
+  padding-bottom: 0px;
+  width: 350px;
+  padding: 0px;
+}
+
+.sidebar-buttons-top {
+  padding: 20px 20px 0 20px;
+}
+
+.sidebar .btn {
+  text-transform: uppercase;
+}
+
+.btn-channel, .btn-channel:hover {
+  background-color: #FF470C;
+  text-align: left;
+}
+
+.channel-title {
+  float: left;
+}
+
+.channel-caret {
+  float: right;
+}
+
+.all-channels-dropdown {
+  width: 100%;
+}
+
+.sidebar-articles {
+  padding-left: 25px;
+  margin: 0px;
+  border-bottom: 1px solid #D9D9D9;
+  list-style-type: none;
+}
+
+.sidebar-ul li {
+  padding: 10px 5px;
+  border-top: 1px solid #D9D9D9;
+}
+
+.sidebar-articles img {
+  float: left;
+  margin: 5px;
+  padding-bottom: 10px;
+}
+
+.sidebar-articles li a {
+  color: gray;
+}
+
+.sidebar-articles li a:hover {
+  background-color: transparent !important;
+  font-style: none;
+  text-decoration: none;
+  color: #FF470C;
+}
+
+.sidebar-bottom-links {
+  margin: 16px 0;
+}
+
+.sidebar-bottom-links li {
+  list-style-type: none;
+  display: inline-block;
+  /*padding-left: px;*/
+  padding-right: 10px;
+}
+
+.tnw-tag {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.tnw-tag a {
+  text-decoration: underline;
+}
+
+.main {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #CCCCCC;
+  margin-top: 20px;
+}
+
+img .center-block {
+/*  display: block;
+  margin-left: auto;
+  margin-right: auto;*/
+}
+
+.article-info {
+  color: #BAB9B7;
+  font-style: italic;
+  font-family: 'FF Tisa',Georgia,serif;
+  /*font-weight: bold;*/
+}
+
+#author {
+  text-transform: uppercase;
+  font-style: normal;
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+}
+
+a {
+  color: #FF470C;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  font-family: Georgia;
+  font-size: 1.1em;
+  line-height: 25px;
+  color: gray;
+}
+
+.login-menu {
+  background-color: #383838;
+}
+
+.login-menu li {
+  text-align: center;
+  padding: 10px;
+}
+
+.login-dropdown {
+  text-align: left;
+  color: white;
+}
+
+.form-control {
+  width: 250px;
+}
+
+.btn-login {
+  background-color: transparent;
+  width: 250px;
+  color: white;
+  font-size: 14px;
+  border: 1px solid white;
+}
+
+.no-account li {
+  padding: 5px;
+  color: white;
+  background-color: #313131;
+}
+
+.btn-create {
+  width: 250px;
+  text-align: center;
+  font-size: 14px;
+}
