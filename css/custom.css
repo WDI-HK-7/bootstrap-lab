@@ -7,9 +7,14 @@ body {
   background-color: white; 
 }
 
+.left-links {
+  position: absolute;
+  left: 100px;
+}
+
 /*how to get the border ON TOP of header border?*/
 .navbar-left li:hover, .navbar-left a:hover {
-  border-bottom: 2px solid red;
+  border-bottom: 1px solid red;
   color: #FF470C !important;
 }
 
