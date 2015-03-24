@@ -1,1 +1,30 @@
-/* You can include your custom styling here */
+.background {
+	background-color: gray;
+
+} 
+.navbar-default {
+	text-align: center;
+
+}
+.navbar-header {
+	text-align: right;
+	display: inline-block;
+}
+.navbar-brand {
+    border-left:;
+    position: absolute;
+
+}
+.navbar-default {
+	text-align: left;
+	display: inline-block;
+}
+::before {
+
+}
+::after {
+
+}
+#headerbar {
+	
+}
