@@ -18,64 +18,315 @@
     <script src="js/ie-emulation-modes-warning.js"></script><style type="text/css"></style>
 
     <link href="css/custom.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,200italic,300italic,400italic,600italic' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
 
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <img src="images/logo/tnw-logo.svg" alt="" width="auto" height="100%">
-          </a>
+      <div>
+        
+      </div>
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" src="images/logo/tnw-logo.svg" width="auto" height="100%">
+        </a>
+        
+      
+
+        <ul class="nav navbar-nav hidden-xs hidden-sm" id="nav-left">
+          <li class="active"><a href="#">BLOG</a></li>
+          <li><a href="#">CONFERENCE</a></li>
+          <li><a href="#">DEALS</a></li>
+          <li><a href="#">PRO</a></li>
+        </ul>
+        <!-- Search Form Right -->
+        <div class="navbar-right">
+          <div class="form-group hidden-xs hidden-sm">
+            <form class="navbar-form" role="search">          
+              <input id="navform" type="text" class="form-control" placeholder="Search...">
+            </form>
+          </div>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>
-        </div>
+        <!-- Begin Nav Bar Right -->
+        <ul class="nav navbar-nav navbar-right" id="navbar-right">
+        <!-- Social follow Buttons -->
+          <li id="fb" class="hidden-xs hidden-sm">
+            <a href="#"><img src="images/social/fb.png"></a>
+          </li>
+          <li id="twitter" class="hidden-xs hidden-sm">
+            <a href="https://twitter.com/twitter" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @twitter</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          </li>
+          <li id="rss" class="hidden-xs hidden-sm">
+              <a href="#"><img src="images/social/rss.png"></a>
+          </li>
+          <li id="follow">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              <small class="hidden-md hidden-lg">FOLLOW</small>
+              <span class="caret"></span>
+            </a>
+            <div class="dropdown-menu row follow-menu" role="menu">
+              <div class="col-xs-4">Facebook</div>
+              <div class="col-xs-4">Facebook</div>
+              <div class="col-xs-4">Facebook</div>
+              <div class="col-xs-4">Facebook</div>
+              <div class="col-xs-4">Facebook</div>
+              <div class="col-xs-4">Facebook</div>
+              <div class="col-xs-4">Facebook</div>
+              <div class="col-xs-4">Facebook</div>
+              <div class="col-xs-4">Facebook</div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+          <li class="dropdown hidden-xs hidden-sm">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+          <li id="navsearch">
+            <a href="#">
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </a>  
+          </li>
+
+        </ul>    
+
       </div>
     </nav>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-          </ul>
+    <div id="feed" class="hidden-xs hidden-sm hidden-md">
+      <div class="container container-feed">
+        <!-- feeder top navigation -->
+        <div class="row feed-top">
+          <div class="col-lg-12">
+            <select class="form-control">
+              <option>ALL CHANNELS</option>
+              <optgroup label="Channels">
+               <option value="apps">Apps</option>
+               <option value="creativity">Creativity</option>
+               <option value="dd">Design &amp; Dev</option>
+               <option value="entrepreneur">Entrepreneur</option>
+               <option value="gadgets">Gadgets</option>
+               <option value="insider">Insider</option>
+               <option value="lifehacks">LifeHacks</option>
+               <option value="media">Media</option>
+               <option value="offers">Offers</option>
+               <option value="shareables">Shareables</option>
+               <option value="socialmedia">Social Media</option>
+              </optgroup>
+              <optgroup label="Editions">
+               <option value="africa">Africa</option>
+               <option value="asia">Asia</option>
+               <option value="au">Australia</option>
+               <option value="ca">Canada</option>
+               <option value="eu">Europe</option>
+               <option value="in">India</option>
+               <option value="la">Latin America</option>
+               <option value="me">Middle East</option>
+               <option value="uk">UK</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="col-lg-12">
+            <div class="btn-group feed-btn" role="group" aria-label="...">
+              <button type="button" class="btn btn-feed active"><strong><span class="glyphicon glyphicon-time"></span> LATEST</strong></button>
+              <button type="button" class="btn btn-feed"><strong><span class="glyphicon glyphicon-fire"></span> POPULAR</strong></button>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1>News Content</h1>
+        <!-- end of feeder top navigation -->
+        <!-- start of feeder content -->
+        <div class="row feed-content">
+
+          <div class="feed-tabs clearfix">
+            <div class="col-lg-4">
+              <div class="thumbnail">
+                <img src="images/sidebar/kit-tb.jpg" alt="telephone kits">
+              </div>
+            </div>
+            <div class="col-lg-8"> 
+              <div class="caption">
+                <p>91% off a Lifetime Of Premium UI Kits &#38; Design Resources
+                <div><small><em></em></small></p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feed-tabs clearfix">
+            <div class="col-lg-4">
+              <div class="thumbnail">
+                <img src="images/sidebar/phone-tb.jpg" alt="telephone kits">
+              </div>
+            </div>
+            <div class="col-lg-8"> 
+              <div class="caption">
+                <p>Square Takes Its Register Software Platform Worldwide <br />
+                <div><small><em>10 minutes ago</em></small></p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feed-tabs clearfix">
+            <div class="col-lg-4">
+              <div class="thumbnail">
+                <img src="images/sidebar/coat-tb.jpg" alt="telephone kits">
+              </div>
+            </div>
+            <div class="col-lg-8"> 
+              <div class="caption">
+                <p>The Weird Science of First Impressions<br />
+                <div><small><em>18 minutes ago</em></small></p></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="feed-div"></div>
+
+          <div class="feed-tabs clearfix">
+            <div class="col-lg-4">
+              <div class="thumbnail">
+                <img src="images/sidebar/shoe-tb.png" alt="telephone kits">
+              </div>
+            </div>
+            <div class="col-lg-8"> 
+              <div class="caption">
+                <p>Print Photos on Your Adidas Sneakers. Why not?<br />
+                <div><small><em>20 minutes ago</em></small></p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feed-tabs clearfix">
+            <div class="col-lg-4">
+              <div class="thumbnail">
+                <img src="images/sidebar/mountain-tb.png" alt="telephone kits">
+              </div>
+            </div>
+            <div class="col-lg-8"> 
+              <div class="caption">
+                <p>Amazon Begins its Black Friday deals a week early<br />
+                <div><small><em>25 minutes ago</em></small></p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feed-tabs clearfix">
+            <div class="col-lg-4">
+              <div class="thumbnail">
+                <img src="images/sidebar/phone-tb.jpg" alt="telephone kits">
+              </div>
+            </div>
+            <div class="col-lg-8"> 
+              <div class="caption">
+                <p>Square Takes Its Register Software Platform Worldwide <br />
+                <div><small><em>10 minutes ago</em></small></p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feed-tabs clearfix">
+            <div class="col-lg-4">
+              <div class="thumbnail">
+                <img src="images/sidebar/coat-tb.jpg" alt="telephone kits">
+              </div>
+            </div>
+            <div class="col-lg-8"> 
+              <div class="caption">
+                <p>The Weird Science of First Impressions<br />
+                <div><small><em>18 minutes ago</em></small></p></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="feed-div"></div>
+
+          <div class="feed-tabs clearfix">
+            <div class="col-lg-4">
+              <div class="thumbnail">
+                <img src="images/sidebar/shoe-tb.png" alt="telephone kits">
+              </div>
+            </div>
+            <div class="col-lg-8"> 
+              <div class="caption">
+                <p>Print Photos on Your Adidas Sneakers. Why not?<br />
+                <div><small><em>20 minutes ago</em></small></p></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- end of feeder content -->
+        <div class="row feed-footer">
+          <div class="col-lg-12">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Goodies</a></li>
+              <li><a href="#">Advertise</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">ToS</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+
+    <div id="main-content">
+
+      <div class="container container-content">
+        <div class="row">
+          <div class="col-lg-12 clearfix" id="support-banner">
+            <p class="hidden-xs">Support TNW - <a href="#">become Pro</a> and we can ditch the banners.</p>
+          </div>
+          <div class="content">
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+              <img class="img-responsive" src="images/main/phone.jpg">
+              <p class="img-cap"><em>By </em><strong>BEN WOODS</strong> - <em>20 Nov'14</em></p>
+              <h1>Square officially launches its Register software platform worldwide</h1>
+              <p>Square has today announced that its point-of-sale (POS) software Square Register is now available globally, having previously been restricted to users in the US, Canada and Japan. Announced at The Financial...<span class="keep-read">Keep reading </span><span class="glyphicon glyphicon-arrow-right"></span></p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <img class="img-responsive" src="images/main/coat.jpg">
+              <p class="img-cap"><em>20 Nov'14 - By </em><strong>JORY MACKAY</strong></p>
+              <p class="snippet">The weird science of first impressions</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <img class="img-responsive" src="images/main/shoe.png">
+              <p class="img-cap"><em>20 Nov'14 - By </em><strong>PAUL SAWERS</strong></p>
+              <p class="snippet">Adidas now lets Americans print photos on their sneakers too</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -85,5 +336,7 @@
     <script src="js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <div id="fb-root"></div>
+    
 </body>
 </html>
