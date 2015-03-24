@@ -1,1 +1,72 @@
 /* You can include your custom styling here */
+
+body {
+	font-family: "Source Sans Pro", sans-serif;
+	font-style: normal;
+	background-color: rgba(217,224,226,0.4);
+}
+
+#sidebar li {
+border-top: 1px solid rgba(217,224,226,0.4);
+}
+.fig {
+	color: gray;
+}
+
+.thumbnail {
+	float: left;
+	height: 50px;
+	width: 60px;
+	position: relative;
+}
+
+.sidebar {
+	background-color: white;
+}
+
+.container-fluid .navbar-header ul li a {
+	color: gray;
+}
+
+.container-fluid .navbar-header ul li a:hover {
+	color: red;
+	border-bottom: 2px solid red;
+}
+.navbar-header ul li a {
+	border-color: #ff3c1f;
+	color: #ff3c1f;
+	opacity: 1;
+	border-bottom: 2px solid transparent;
+}
+.sidebarbody {
+}
+
+.sidebar-item {
+	display: inline-block;
+}
+
+.form-control {
+	background-color: red;
+	color: white;
+}
+
+#searchbar {
+	background-color: white;
+	color: gray;
+}
+
+#twittericon {
+	padding:0;
+	margin:0;
+}
+
+#menudown {
+	height: auto;
+	width: 500px;
+}
+
+.nav-sidebar {
+	height: 500px;
+	overflow-y:scroll;
+}
+
