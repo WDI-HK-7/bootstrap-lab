@@ -35,15 +35,21 @@
             <img src="images/logo/tnw-logo.svg" alt="" width="auto" height="100%">
           </a>
         </div>
+
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="#" id="blog">Blog</a></li>
+            <li><a href="#" id="conference">Conference</a></li>
+            <li><a href="#" id="deals">Deals</a></li>
+            <li><a href="#" id="pro">Pro</a></li>
           </ul>
           <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a id="facebook" href="#"> <img src="http://theawesomedaily.theawesomedaily.netdna-cdn.com/wp-content/uploads/2014/08/tshare.png" id="FB"></a></li>
+              <li><a id="twitter" href="#"><img src="http://theawesomedaily.theawesomedaily.netdna-cdn.com/wp-content/uploads/2014/08/fshare.png"></a></li>
+            <li><input type="text" class="form-control" placeholder="Search..."></li>
+            </ul>
+            
           </form>
         </div>
       </div>
@@ -51,31 +57,90 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-          </ul>
+        <div class="hidden-xs hidden-sm hidden-md col-lg-3 sidebar">
+        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+          <div class="btn-group">
+            <button class="btn btn-default btn-sl dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false" id="allchannels">All Channels <span class="caret"></span>                     
+            </button> 
+          </div>
+            <ul class="dropdown-menu" role="menu" >
+              ...
+            </ul>
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1>News Content</h1>
+          <div class="btn-group btn-group-justified" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default disabled">Latest</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default">Popular</button>
+            </div>
+          </div>
+          <div class="list-group">
+
+            <a href="#" class="list-group-item"> 
+               <p class="list-group-item-text"><img src="images/sidebar/kits-and-themese-feat-60x50.jpg" align="left">91% off a Lieftime Of Premium Ul Kits & Design Resources</p>
+            <a href="#" class="list-group-item">  
+              <p class="list-group-item-text">Square Takes Its Register Software platform Worldwide</p>
+              <p>   </p>
+              <p> 10 minutes ago </p>
+            </a>
+            </a>
+            <a href="#" class="list-group-item">
+              <p class="list-group-item-text">The Weird Science of Frist Impressions</p>
+              <p>   </p>
+              <p> <em>18 minutes ago</em> </p>
+            <a href="#" class="list-group-item">  
+              <p class="list-group-item-text"></p>
+            </a>
+            </a>
+            <a href="#" class="list-group-item">
+              <p class="list-group-item-text">Print Photos on Your Adidas Sneakers. Why not?</p>
+              <p>   </p>
+              <p> 27 minutes ago </p>
+            <a href="#" class="list-group-item">  
+              <p class="list-group-item-text">Amazon begins its Black Friday deals a week early</p>
+              <p>   </p>
+              <p> 30 minutes ago </p>
+            </a>
+            </a>
+            <a href="#" class="list-group-item">
+              <p class="list-group-item-text">Facebook Expands Its Drone</p>
+            </a>
+          </div>
+          
         </div>
+        <div class="col-xs-12 col-sm-12 main col-md-12 col-lg-9 col-lg-offset-3">
+          <h1 id= "bodytitle">Support TNW - <span style ="color: orange;"> <u>become Pro</u> </span> and we can ditch the banners. </h1> <!--I know I should use 'style' but I had no idea how to do it otherwise-->
+        
+      <div class="mainBox col-xs-12 col-sm-7">
+         <img src="images/main/Square-Reader-520x245.jpg" alt= "oops;" width="520" height="245">    
+          <h2 id ="benWoods"><em>By</em> <b>BEN WOODS </b>-<em>20 Nov' 14</em></h2>
+          <h1>Square officially launches its register software platform worldwide</h1>
+
+            <p> Square has today announced that its point-of-scale (POS) sofware Square Register is now available globaly, having previously been restricted to users in the US, Canada and Japan. Announced at the The Financial...Keep reading</p>
       </div>
-    </div>
+          
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <div class="thumbnail1">
+            <img src="images/main/well-dressed-man-in-coat-520x245.jpg" alt="oops_sorry" width="100%" height="auto" >
+            <div class="caption">
+              <p> <em>20 Nov' 14 - By</em> Jory Mackay</p>
+              <p> The weird science of first impressions</p>
+            </div>  
+          </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-4">
+          <div class="thumbnail2">
+            <img src="images/main/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-520x245.png" alt="oops_again" width="100%" height="auto" >
+            <div class="caption">
+              <p> <em> 20 Nov' 14 - By</em> Paul Sawers</p>
+              <p> Adidas now lets Americans print photos on their sneakers too</p>
+            </div>
+          </div>
+        </div> 
+      </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
