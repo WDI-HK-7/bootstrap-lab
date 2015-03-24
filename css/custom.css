@@ -1,1 +1,7 @@
-/* You can include your custom styling here */
+.topbar {
+	background-color: red
+}
+
+.sidebar {
+	background-color: black; 
+}

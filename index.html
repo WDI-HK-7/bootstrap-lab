@@ -21,7 +21,7 @@
   </head>
 
   <body>
-
+<!-- Navigation bar BLOCK I -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -31,51 +31,162 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          <!-- Brand -->
           <a class="navbar-brand" href="#">
             <img src="images/logo/tnw-logo.svg" alt="" width="auto" height="100%">
           </a>
         </div>
+        <!-- navibar -->
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-left">
             <li><a href="#">Dashboard</a></li>
             <li><a href="#">Settings</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="#">Help</a></li>
-          </ul>
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>
-        </div>
+          </ul> 
+          <div id="sm">
+            <!-- search bar -->
+            <form class="navbar-form navbar-right">
+              <span class="glyphicon glyphicon-triangle-bottom"><a href="#"></a></span>
+              <span class="glyphicon glyphicon-user"><a href="#"></a></span>
+              <span class="glyphicon glyphicon-info-sign"><a href="#"></a></span>
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+              <input type="text" class="form-control" placeholder="Search...">
+            </form>
+            
+          </div>  
       </div>
     </nav>
-
+<!-- THE Row -->
     <div class="container-fluid">
+<!-- Side Bar BLOCK II -->
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1>News Content</h1>
+        <div class="col-lg-4 col-md-hidden sidebar">
+          <!-- Latest/Popular Button -->
+          <div class="btn-group" role="group" aria-label="Left Align">
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-time" aria-hidden="true">Latest</span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-fire" aria-hidden="true">Popular</span></button>
+          </div>
+          <!-- Channels dropdown -->
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+              Channels
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+              <li role="presentation" class="dropdown-header">Dropdown header</li>
+              <li role="presentation" class="dropdown"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+              <li role="presentation" class="dropdown"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+              <li role="presentation" class="dropdown"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+              <li role="presentation" class="dropdown"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+            </ul>
+          </div>  
+          <!-- News Snippets -->
+          <div>
+            <ul class="media-list">
+              <li class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="../Labs/images/sidebar/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-60x50.png">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Print pictures on your sneakers. Why not?</h4>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="../Labs/images/sidebar/well-dressed-man-in-coat-60x50.jpg">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">The Weird Science of First Impressions</h4>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="../Labs/images/sidebar/Square-Reader-60x50.jpg">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Square Takes Its Register Software Plaftorm Worldwide</h4>
+                </div>
+              </li>
+              <li class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="../Labs/images/sidebar/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-60x50.png">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Media heading</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <br>
+          <!-- Bottom static bar -->
+          <div>
+            <nav class="col-sm-3 col-md-3 navbar navbar-default navbar-fixed-bottom">
+              <div class="container">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+              </ul>  
+              </div>
+            </nav>  
+          </div>
+      </div> 
+<!-- News Content BLOCK III -->
+      <div class="col-lg-8" style="float: right">
+        <div class="row1 col-lg-8 col-lg-offset-2">
+          <!-- Main Article-->
+          <img id="square" src="../Labs/images/main/Square-Reader-520x245.jpg"/>
+          <div class="loop-post-byline">
+            <span class="date">By</span>
+            <span class="author">
+              <a href="#">Ben Woods</a>
+            </span>
+            <span class="date">-- 20 Nov '14</span> 
+          <h1 class="article-title">
+            <a href="#">Square officially launches its Register software platform worldwde</a>
+          </h1>
+          <p>Square has today announced that its point-of-sale (POS) software Square Register is now available globally, having previously been restricted to users in the US, Canada and Japan. Announced at The Financial...<a id="keep-reading" href="#">Keep reading</a></p>
+          </div>
+        <!-- Interior Side Bar -->
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="../Labs/images/main/well-dressed-man-in-coat-520x245.jpg">
+              <div class="caption">
+                <span class="date">By</span>
+                <span class="author">
+                  <a href="#">Ben Woods</a>
+                </span>
+                <span class="date">-- 20 Nov '14</span> 
+                <h3>The Weird Science of First Impressions</h3>
+              </div>  
+              <img src="../Labs/images/main/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-520x245.png">
+              <div class="caption">
+                <span class="date">By</span>
+                <span class="author">
+                  <a href="#">Ben Woods</a>
+                </span>
+                <h3>Adidas now let America print photos on their sneakers too</h3>
+              </div>
+            </div>
+            <div class ="row2"
+              <br>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      </div>
+    </div>  
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
