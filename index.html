@@ -21,61 +21,255 @@
   </head>
 
   <body>
-
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <img src="images/logo/tnw-logo.svg" alt="" width="auto" height="100%">
-          </a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1>News Content</h1>
-        </div>
-      </div>
-    </div>
+  	<nav class="nav navbar navbar-default container-fluid" id="flower">
+    	<div class="navbar-left">
+		    <a class="navbar-brand" href="#">
+		      	<img src="images/logo/tnw-logo.svg" alt="The Next Web" width="auto" height="100%">
+		    </a>
+	      <ul id="navigate" class="nav navbar-nav hidden-xs hidden-sm">
+	        <li><a href="#" class="text-uppercase">Blog</a></li>
+	        <li><a href="#" class="text-uppercase">Conference</a></li>
+	        <li><a href="#" class="text-uppercase">Deals</a></li>
+	        <li><a href="#" class="text-uppercase">Pro</a></li>
+	      </ul>
+	    </div>
+	    
+      <ul class="nav navbar-nav navbar-right inline">
+        <li>
+      		<img class="hidden-xs hidden-sm social" src="images/facebook.png" alt="facebook" href="#" height="25px">
+      		<img class="hidden-xs hidden-sm social" src="images/twitter.png" alt="facebook" href="#" height="25px">
+      		<img class="hidden-xs hidden-sm social" src="images/rss.png" alt="facebook" href="#" height="25px">
+      	</li>
+      	<li class="hidden-md hidden-lg text-uppercase follow">Follow</li>
+      	<li class="line">
+      		<a class="glyphicon glyphicon-triangle-bottom icon" class="nav" aria-hidden="true"></a>
+      	</li>
+      	<li class="line">
+      		<a class="glyphicon glyphicon-user icon" aria-hidden="true"></a>
+      	</li>
+      	<li class="line">
+      		<a class="glyphicon glyphicon-info-sign hidden-xs hidden-sm icon" aria-hidden="true"></a>
+      	</li>
+      	<li>
+      		<a class="glyphicon glyphicon-search icon" aria-hidden="true"></a>
+      	</li>
+      	<li class="search">
+      		<div class="form-group">
+	          <input type="text" class="form-control hidden-xs hidden-sm" placeholder="Search">
+	        </div>
+	      </li>
+      </ul>
+		</nav>
+		<div class="container-responsive">
+	    <div class="row">
+	    	<div class="hidden-xs hidden-sm hidden-md col-lg-3 sidebar">
+	      	<div class="nav nav-default navbar-fixed-top col-lg-3">
+	      		<div class="btn-group btn-group-justified">
+						  <button id="button1" type="button" class="btn btn-default dropdown-toggle text-uppercase" data-toggle="dropdown" aria-expanded="false">
+						  	All channels
+						  	<span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu" role="menu">
+						    <li><a href="#">Action</a></li>
+						    <li><a href="#">Another action</a></li>
+						    <li><a href="#">Something else here</a></li>
+						    <li class="divider"></li>
+						    <li><a href="#">Separated link</a></li>
+						  </ul>
+						</div>
+						<div class="btn-group btn-group-justified" role="group" aria-label="...">
+						  <button id="button2" type="button" class="btn btn-default text-uppercase"><a class="glyphicon glyphicon-time" aria-hidden="true"></a> Latest</button>
+						  <button id="button3" type="button" class="btn btn-default text-uppercase"><a class="glyphicon glyphicon-fire" aria-hidden="true"></a> Popular</button>
+					  </div>
+	      	</div>
+	      	<ul class="nav nav-sidebar">
+	      		<li>
+	            <a href="#">
+	            	<div class="media">
+								  <div class="media-left">
+			    		      <img class="img-rounded" src="images/sidebar/kits-and-themese-feat-60x50.jpg" alt="kits">
+								  </div>
+								  <div class="media-body">
+								    <h4 class="media-heading" class="text-capitalize">91% off a lifetime of premium UI kits & design resources</h4>
+								  </div>
+								</div>
+							</a>
+	          </li>
+	          <li>
+	            <a href="#">
+	            	<div class="media">
+								  <div class="media-left">
+			    		      <img class="img-rounded" src="images/sidebar/Square-Reader-60x50.jpg" alt="kits">
+								  </div>
+								  <div class="media-body">
+								    <h4 class="media-heading" class="text-capitalize">Square takes its register software pLatform worldwide</h4>
+								    <cite>10 minutes ago</cite>
+								  </div>
+								</div>
+							</a>
+	          </li>
+	          <li>
+	            <a href="#">
+	            	<div class="media">
+								  <div class="media-left">
+			    		      <img class="img-rounded" src="images/sidebar/well-dressed-man-in-coat-60x50.jpg" alt="kits">
+								  </div>
+								  <div class="media-body">
+								    <h4 class="media-heading" class="text-capitalize">The weird science of First impressions</h4>
+								    <cite>18 minutes ago</cite>
+								  </div>
+								</div>
+							</a>
+	          </li>
+	          <li>
+	            <a href="#">
+	            	<div class="media">
+								  <div class="media-left">
+			    		      <img class="img-rounded" src="images/sidebar/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-60x50.png" alt="kits">
+								  </div>
+								  <div class="media-body">
+								    <h4 class="media-heading" class="text-capitalize">Print photos on your Adidas sneakers. Why not?</h4>
+								    <cite>27 minutes ago</cite>
+								  </div>
+								</div>
+							</a>
+	          </li>
+	          <li>
+	            <a href="#">
+	            	<div class="media">
+								  <div class="media-left">
+			    		      <img class="img-rounded" src="images/sidebar/Full-Page-Beauty-Bundle-Screenshot-3-1-60x50.png" alt="kits">
+								  </div>
+								  <div class="media-body">
+								    <h4 class="media-heading" class="text-capitalize">Amazon begins its Black Friday deals a week early</h4>
+								    <cite>30 minutes ago</cite>
+								  </div>
+								</div>
+							</a>
+	          </li>
+	          <li>
+	            <a href="#">
+	            	<div class="media">
+								  <div class="media-left">
+			    		      <img class="img-rounded" src="images/sidebar/kits-and-themese-feat-60x50.jpg" alt="kits">
+								  </div>
+								  <div class="media-body">
+								    <h4 class="media-heading" class="text-capitalize">91% off a lifetime of premium UI kits & design resources</h4>
+								  </div>
+								</div>
+							</a>
+	          </li>
+	          <li>
+	            <a href="#">
+	            	<div class="media">
+								  <div class="media-left">
+			    		      <img class="img-rounded" src="images/sidebar/Square-Reader-60x50.jpg" alt="kits">
+								  </div>
+								  <div class="media-body">
+								    <h4 class="media-heading" class="text-capitalize">Square takes its register software pLatform worldwide</h4>
+								    <cite>10 minutes ago</cite>
+								  </div>
+								</div>
+							</a>
+	          </li>
+	          <li>
+	            <a href="#">
+	            	<div class="media">
+								  <div class="media-left">
+			    		      <img class="img-rounded" src="images/sidebar/well-dressed-man-in-coat-60x50.jpg" alt="kits">
+								  </div>
+								  <div class="media-body">
+								    <h4 class="media-heading" class="text-capitalize">The weird science of First impressions</h4>
+								    <cite>18 minutes ago</cite>
+								  </div>
+								</div>
+							</a>
+	          </li>
+	          <li>
+	            <a href="#">
+	            	<div class="media">
+								  <div class="media-left">
+			    		      <img class="img-rounded" src="images/sidebar/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-60x50.png" alt="kits">
+								  </div>
+								  <div class="media-body">
+								    <h4 class="media-heading" class="text-capitalize">Print photos on your Adidas sneakers. Why not?</h4>
+								    <cite>27 minutes ago</cite>
+								  </div>
+								</div>
+							</a>
+	          </li>
+	          <li>
+	            <a href="#">
+	            	<div class="media">
+								  <div class="media-left">
+			    		      <img class="img-rounded" src="images/sidebar/Full-Page-Beauty-Bundle-Screenshot-3-1-60x50.png" alt="kits">
+								  </div>
+								  <div class="media-body">
+								    <h4 class="media-heading" class="text-capitalize">Amazon begins its Black Friday deals a week early</h4>
+								    <cite>30 minutes ago</cite>
+								  </div>
+								</div>
+							</a>
+	          </li>
+	      	</ul>
+	      	<ul class="nav nav-tabs navbar-fixed-bottom col-lg-3">
+	      		<li><a href="#">About</a></li>
+	          <li><a href="#">Goodies</a></li>
+	          <li><a href="#">Advertise</a></li>
+	          <li><a href="#">Privacy</a></li>
+	          <li><a href="#">ToS</a></li>
+	      	</ul>
+	    	</div>
+	    </div>
+	  </div>
+	  <div class="container-responsive">
+	    <div class="row">
+			  <div class="col-md-12 col-lg-9 col-lg-offset-3 main">
+			    <p class="hidden-xs col-md-offset-1">Support TNW - <a href="#">become Pro</a> and we can ditch the banners.</p>
+		      <div class="col-md-10 col-md-offset-1" id="biggy">
+		      	<div class="row">
+						  <div class="col-xs-12 col-sm-7">
+						    <div class="thumbnail">
+						      <img src="images/main/Square-Reader-520x245.jpg" alt="...">
+						      <div class="caption">
+						      	<cite>By <a href="#" class="text-uppercase">Ben Woods</a> — 20 Nov'14</cite>
+						        <h1>Square officially launches its Register software platform worldwide</h1>
+						        <p>Square has today announced that its point-of-sale(POS) software Square Register is now available globally, having previously been restricted to users in the US, Canada and Japan. Announced at The Financial...<a href="#">Keep reading</a> </p>
+						      </div>
+						    </div>
+						  </div>
+							<div class="col-xs-12 col-sm-5">
+						    <div class="thumbnail">
+						      <img src="images/main/well-dressed-man-in-coat-520x245.jpg" alt="...">
+						      <div class="caption">
+						      	<cite>20 Nov'14 — By <a href="#" class="text-uppercase">Jory Mackay</a></cite>
+						        <h3>The weird science of first impressions</h3>
+						      </div>
+						    </div>
+						  	<div class="thumbnail">
+						      <img src="images/main/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-520x245.png" alt="...">
+						      <div class="caption">
+						      	<cite>20 Nov'14 — By <a href="#" class="text-uppercase">Paul Sawers</a></cite>
+						        <h3>Adidas now lets Americans print photos on their sneakers too</h3>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="hidden-xs hidden-sm hidden-md col-lg-10 col-lg-offset-1 footer">
+						<footer>
+			  	  	<a class="navbar-brand" href="#">
+		      			<img id="invert" src="http://styleguide.thenextweb.com/assets/img/tnw-logo-light-bw.svg" alt="The Next Web" width="auto" height="100%">
+		      		</a>
+		    			<span class="navbar-right">
+		    				<h5 class="inline">TNW Conference USA</h5>
+		    				<button type="button" class="btn btn-default text-uppercase inline button4" aria-expanded="false">Show all</button>
+		    			</span>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -85,5 +279,5 @@
     <script src="js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-</body>
+	</body>
 </html>
