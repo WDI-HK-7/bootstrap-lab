@@ -1,1 +1,130 @@
 /* You can include your custom styling here */
+.navbar-fixed-top{
+	top: auto;
+	background-color: white;
+	padding: 15px;
+	border-top: 2px solid silver;
+	border-right: 1px solid silver;
+	border-bottom: 1px solid silver;
+}
+.sidebar {
+	padding: 0;
+	border-right: 1px solid silver;
+}
+.navbar-fixed-bottom {
+	background-color: white;
+	padding: 15px;
+	max-width: auto;
+	border-top: 1px solid silver;
+	border-right: 1px solid silver;
+}
+.nav>li>a {
+	padding: 4px;
+	text-align: center;
+}
+#button1 {
+	width: 283px;
+	margin-bottom: 7px;
+	padding: auto 20px;
+	background-color: #ff3c1f;
+	border-color: white;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+}
+#button2, #button3 {
+	width: 142px;
+	margin-bottom: 7px;
+	padding: auto 20px;
+	font-weight: bold;
+	color: grey;
+	font-size: 12px;
+}
+.nav-sidebar {
+	padding-top: 118px;
+	background-color: white;
+	margin-top: 3px;
+}
+.nav-sidebar>li {
+	padding: 10px;
+	margin-left:20px;
+
+}
+.glyphicon {
+	color:grey;
+}
+#navigate>li {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 10px;
+	font-style: narrow;
+}
+#flower {
+	border-bottom: 2px solid silver;
+	border-opacity: 0.5;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#navigate>li:hover {
+	padding-bottom: 10px;
+	border-bottom: 2px solid #ff3c1f;
+
+}
+p {
+	text-align: center;
+	padding: auto 15px;
+}
+.thumbnail {
+	border: 0px;
+}
+#biggy {
+	background-color: white;
+	padding: 15px;
+	border: 1px solid silver;
+}
+body {
+	padding: 0;
+	background-color: #f8f9fa;
+}
+.footer {
+	background-color: #ff3c1f;
+}
+.inline {
+	display: inline-block;
+}
+h5 {
+	color: white;
+}
+.button4 {
+	margin: 15px;
+}
+#invert {
+	margin-top: 5px;
+}
+.social {
+	margin: 10px;
+}
+.icon, .icon-right {
+	margin: 10px;
+}
+.follow {
+	margin-top: 15px;
+}
+.line {
+	border-right: 1px solid silver;
+}
+.navbar-brand {
+	margin-left: 20px;
+}
+a {
+	color: #ff3c1f;
+}
+.search {
+	margin-right: 30px;
+	margin-top: 7px;
+}
+.form-group {
+	margin-bottom: 0;
+}
