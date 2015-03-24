@@ -8,6 +8,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="images/favicon/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 
     <title>The Next Web</title>
 
@@ -18,10 +20,12 @@
     <script src="js/ie-emulation-modes-warning.js"></script><style type="text/css"></style>
 
     <link href="css/custom.css" rel="stylesheet">
+
+
   </head>
 
   <body>
-
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -36,11 +40,11 @@
           </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Conference</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Pro</a></li>
           </ul>
           <form class="navbar-form navbar-right">
             <input type="text" class="form-control" placeholder="Search...">
@@ -51,28 +55,142 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-          </ul>
+        <div class="hidden-xs hidden-sm hidden-md col-lg-3 sidebar">
+
+        <div class="btn-group" role="group" aria-label="">
+          <button type="button" class="btn btn-default btn-lg">
+            <span class="col-lg-6" class="glyphicon glyphicon-time" aria-hidden="true"></span> Latest
+          </button>
+
+          <button type="button" class="btn btn-default btn-lg">
+            <span class="col-lg-6" class="glyphicon glyphicon-fire" aria-hidden="true"></span> Popular
+          </button>
+
+          <br><br>
+          <div class="btn-group btn-group-justified" role="group" aria-label="...">
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="true">All Channels<span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li class="col-lg-11"><a href="#">All Channels</a></li>
+              <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Channels</a></li>
+              <li><a href="#">Apps</a></li>
+              <li><a href="#">Creativity</a></li>
+              <li><a href="#">Design & Dev</a></li>
+              <li><a href="#">Entrepreneur</a></li>
+              <li><a href="#">Gadgets</a></li>
+              <li><a href="#">Insider</a></li>
+              <li><a href="#">Life Hacks</a></li>
+              <li><a href="#">Media</a></li>
+              <li><a href="#">Offers</a></li>
+              <li><a href="#">Shareables</a></li>
+              <li><a href="#">Social Media</a></li>
+              <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Editions</a></li>
+              <li><a href="#">Africa</a></li>
+              <li><a href="#">Asia</a></li>
+              <li><a href="#">Australia</a></li>
+              <li><a href="#">Canada</a></li>
+              <li><a href="#">Europe</a></li>
+              <li><a href="#">India</a></li>
+              <li><a href="#">Latin America</a></li>
+              <li><a href="#">Middle East</a></li>
+              <li><a href="#">UK</a></li>
+              <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Companies</a></li>
+              <li><a href="#">Apple</a>
+              <li><a href="#">Facebok</a>
+              <li><a href="#">Google</a>
+              <li><a href="#">Microsoft</a>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+          </div>
+          <br>
+          <br>
+              <ul>
+                <li class="thumb">
+                  <a href="#"><img src="https://github.com/WDI-HK-7/bootstrap-lab/blob/master/images/sidebar/kits-and-themese-feat-60x50.jpg?raw=true" width="60" height="50">91% off a Lifetime Of Premium UI Kits & Design Resources</a>
+              </li>
+              <br>
+              <br>
+              <li class="stream-item clearfix pinned">
+                <div class="thumb">
+                  <a href="#"><img src="https://github.com/WDI-HK-7/bootstrap-lab/blob/master/images/sidebar/Square-Reader-60x50.jpg?raw=true" width="60" height="50">Square Takes Its Register Software Platform Worldwide</a>
+                </div>
+              </li>
+              <br><br>
+              <li class="stream-item clearfix pinned">
+                <div class="thumb">
+                  <a href="#"><img src="https://github.com/WDI-HK-7/bootstrap-lab/blob/master/images/sidebar/well-dressed-man-in-coat-60x50.jpg?raw=true" width="60" height="50">The Weird Science of First Impressions</a>
+                </div>
+              </li>
+              <br><br>
+              <li class="stream-item clearfix pinned">
+                <div class="thumb">
+                  <a href="#"><img src="https://github.com/WDI-HK-7/bootstrap-lab/blob/master/images/sidebar/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-60x50.png?raw=true" width="60" height="50">Print Photos on Your Adidas Sneakers. Why Not?</a>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1>News Content</h1>
+        
+    <!-- Main Section -->
+    <div class="container">
+      <div id="main-section">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 main wrapping">
+          <div id="top-leaderboard" class="text-center"><h5>Support TNW - <a href="#">become Pro</a> and we can ditch the banners</h5>
+          </div>
+
+          <!-- Top Story -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-8">
+              <div class="top-story-image">
+                <img src="https://github.com/WDI-HK-7/bootstrap-lab/blob/master/images/main/Square-Reader-520x245.jpg?raw=true" class="img-responsive" alt="Responsive image">
+              </div>
+              
+              <div class="top-story-head">
+                <span>By</span>
+                <span class="author">
+                  <a href="#">Ben Woods</a>  
+                </span>
+                <span class="date">- 20 Nov '14</span>
+              </div>
+            
+              <h1 class="top-story-headline"><a href="#">Square officially launches its Register software platform worldwide</a></h1>
+
+              <div class="top-story-excerpt">      
+                <p> Square has announced today that its point-of-sale (POS) software Square Register is now available globally, having previously been restricted to users in the US, Canada and Japan. Announced at The Financial...<span class="keep-reading"><a href="#">Keep Reading</a></span></p> 
+              </div>
+            </div>
+          </div>
+            
+          <!-- Top Story Side -->
+          <div class="row">
+            <div class="col-sm-4">
+              <!-- Side Story One -->
+              <img src="https://github.com/WDI-HK-7/bootstrap-lab/blob/master/images/main/well-dressed-man-in-coat-520x245.jpg?raw=true" class="img-responsive" alt="Responsive image">
+              <span class="date">20 Nov'14 - By
+              </span>
+              <span class="author">
+                <a href="#">Jory Mackay</a>
+              </span>
+              <h2><a href="#">The weird science of first impressions</a></h2>
+
+              <!-- Side Story Two -->
+              <img src="https://github.com/WDI-HK-7/bootstrap-lab/blob/master/images/main/FireShot-Screen-Capture-357-adidas-Originals-I-mi-ZX-FLUX-Photo-Print-App-www_adidas_co_uk_mizxflux-520x245.png?raw=true" class="img-responsive" alt="Responsive image">
+              <span class="date">20 Nov'14 - By
+              </span>
+              <span class="author">
+                <a href="#">Paul Sawers</a>
+              </span>
+              <h2><a href="#">Adidas now lets Americans print photos on their sneakers too</a></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+          <!-- ANNOUNCEMENT -->
+          <div id= "announcement-footer" class="container">
+          </div>
         </div>
       </div>
     </div>
