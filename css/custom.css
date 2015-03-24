@@ -287,7 +287,10 @@ button.active {
     padding-top: 22px
   }
   #support-banner {
-    margin-bottom: 12px;
+    /*margin-bottom: 12px;*/
+  }
+  .content {
+    margin-top: 35px;
   }
 }
 .container-content {
